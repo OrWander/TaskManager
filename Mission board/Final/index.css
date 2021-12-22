@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#body {
+    background-color: #F0F0F0 !important;
+}
+
+.container {
+    max-width: 70%;
+    border-right: solid 1px rgb(187, 185, 185);
+    border-left: solid 1px rgb(187, 185, 185);
+    background-color: #ffffff;
+
+}
+
+.row1 {
+    background-image: url("https://c8.alamy.com/comp/D1M07N/old-paper-background-dotted-lines-D1M07N.jpg");
+    margin: auto;
+    border-top: white 13px solid;
+}
+
+.h1Class {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.divButton {
+    display: inline-block;
+}
+
+#saveTaskButton,
+#resetFormButton,
+#resetBoardButton,
+#deleteSelectedButton {
+    margin: auto;
+    display: inline-block;
+    z-index: inherit;
+    flex-grow: 3;
+    min-width: 90px;
+    padding: 7% 7%;
+    margin: 7% 7%;
+
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.inputDiv {
+    width: 70%;
+    margin: auto;
+}
+
+.addClassToCard.load {
+    opacity: 0;
+}
+
+.addClassToCard {
+    max-width: 100% !important;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 8%;
+    box-shadow: 2px 2px 4px #262626;
+    height: 180px;
+    opacity: 0;
+    background-color: #f8f9d2;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+    transition: opacity 2s;
+}
+
+.addClassToCardToTrans {
+    opacity: 1;
+}
+
+.row2 {
+    margin-top: 3%;
+    margin: auto;
+}
+
+.scrollDescription {
+    background: white;
+    width: 90%;
+    margin: auto;
+    max-height: 50px;
+    overflow: auto;
+    border-radius: 1em;
+    text-align: center;
+    margin: 5% 5%;
+    padding: 4%;
+}
+
+.deleteButtonCard {
+    width: 70%;
+    height: 35px;
+    margin-top: 4%;
+}
+
+.divDate_Hour {
+    position: absolute;
+    bottom: 0 !important;
+    left: 0em;
+    font-size: 10px;
+    /* padding-top: 10%; */
+    padding-left: 1em;
+}
+
+#taskDueDate {
+    font-size: small;
+}
+
+#divDevelopment,
+#divDesign,
+#divMarketing {
+    padding: 1em 1em 1em 1em;
+    z-index: inherit;
+    min-width: 180px;
+    text-align: center;
+}
+
+h5 {
+    border: #dedede 1px solid;
+    padding: 7% 7%;
+    width: 100%;
+    flex-grow: 1;
+    background-color: white;
+}
+
+label.error {
+    color: red;
+    font-weight: bolder;
+    background-color: white;
+    padding: 3px;
+    margin: 1px 5px 10px 5px;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+label {
+    border-radius: 20%;
+}
+select{
+    display: block;
+}
+
+
+
