@@ -29,3 +29,4 @@ This module requires no modules outside of the API sorces, integrated by an open
  John Bryce# QuaterlyProject
 # quaterlyProjectNew
 # quaterlyProjectNew
+# TaskManager
