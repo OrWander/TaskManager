@@ -17,25 +17,12 @@ function getCard(task, taskIndex) {
         outerDiv.classList.add("addClassToCardToTrans");
     }
 
-    const buttonDiv = document.createElement("div");
-    const hiddenButton = document.createElement("button");
-    hiddenButton.classList.add("btn", "btn-danger", "deleteButtonCard", "d-none");
-    const icon = document.createElement("i");
-    icon.classList.add("bi", "bi-x-circle");
-    hiddenButton.append(icon);
-    buttonDiv.append(hiddenButton);
-
     // Description
     const descriptionDiv = document.createElement("div");
     descriptionDiv.classList.add("scrollDescription");
-
     const descriptionInput = document.createElement("p");
     descriptionInput.innerText = task.description;
     descriptionDiv.append(descriptionInput);
-
-    // Color
-    const priorityInput = document.createElement("div");
-    priorityInput.innerHTML = task.priority;
 
     // Date
     let dateInput = document.createElement("span");
@@ -49,6 +36,20 @@ function getCard(task, taskIndex) {
     departmentInput.innerText = task.department;
     departmentInput.style.marginBottom = "2px";
 
+    // Priority
+    const priorityInput = document.createElement("div");
+    priorityInput.innerHTML = task.priority;
+
+    // Delete button
+    const buttonDiv = document.createElement("div");
+    const hiddenButton = document.createElement("button");
+    hiddenButton.classList.add("btn", "btn-danger", "deleteButtonCard", "d-none");
+    const icon = document.createElement("i");
+    icon.classList.add("bi", "bi-x-circle");
+    hiddenButton.append(icon);
+    buttonDiv.append(hiddenButton);
+
+    // Append all inputs to outer div
     outerDiv.append(descriptionDiv, priorityInput, departmentInput, buttonDiv, dateDiv);
 
     // Events
